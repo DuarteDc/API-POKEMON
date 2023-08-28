@@ -27,3 +27,12 @@ yarn start:dev
 ```
 http://localhost:3000/api/v2/seed
 ```
+
+# Production Build
+
+1. Configurar las variables de entorno de producción en el archivo __env.prod__
+
+2. Construir la imagen
+```
+docker compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
